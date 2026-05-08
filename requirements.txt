@@ -1,0 +1,29 @@
+# ASR/NLP Contact Centre Intelligence
+# Requirements file
+# Install with: pip install -r requirements.txt
+
+# ── ASR ───────────────────────────────
+faster-whisper==1.1.1
+
+# ── LLM / NLP ─────────────────────────
+openai>=1.30.0
+
+# ── Orchestration ──────────────────────
+apache-airflow>=2.9.0
+
+# ── Database ───────────────────────────
+psycopg2-binary>=2.9.9      # PostgreSQL adapter (production)
+# sqlite3 is included in Python standard library (for local dev)
+
+# ── Dashboard ──────────────────────────
+streamlit>=1.35.0
+pandas>=2.2.0
+plotly>=5.22.0
+
+# ── Audio Processing ───────────────────
+pydub>=0.25.1               # Audio segmentation and preprocessing
+soundfile>=0.12.1           # Audio file I/O
+
+# ── Utilities ──────────────────────────
+python-dotenv>=1.0.0        # Load .env for API keys
+tqdm>=4.66.0                # Progress bars
